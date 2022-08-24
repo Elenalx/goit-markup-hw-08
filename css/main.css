@@ -24,7 +24,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.footer__form__sumbit, .portfolio__section__nav, .media__list, .media__list__link, .client-link, .list-client, .social-list-link, .our-advantage, .hero-btn, .contact, .modal-close-btn {
+.footer__form__sumbit, .portfolio__section__nav, .media__list, .media__list__link, .client-link, .list-client, .social-list-link, .our-advantage, .hero-btn, .modal-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +63,11 @@ button {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-btn {
@@ -293,105 +293,6 @@ button {
   line-height: 1.67;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.page-header-container {
-  display: flex;
-  align-items: center;
-}
-
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ECECEC;
-}
-
-.page-nav {
-  display: flex;
-  align-items: center;
-  top: 0;
-  left: 0;
-  margin-right: 93px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-}
-
-.header-mail {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-  color: var(--accent-color);
-}
-
-.logo__part {
-  color: black;
-}
-
-.current {
-  display: inline-block;
-  color: var(--accent-color);
-}
-.current::after {
-  position: absolute;
-  content: " ";
-  left: 0;
-  bottom: 0;
-  margin-bottom: -31px;
-  width: 100%;
-  height: 4px;
-  background: rgb(33, 150, 243);
-  border-radius: 2px;
-}
-
-.menu__item {
-  position: relative;
-}
-.menu__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color var(--transition);
-  color: var(--secondary-text-color);
-}
-.menu__link:hover, .menu__link:focus {
-  color: var(--accent-color);
-}
-
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color var(--transition);
-  color: var(--primary-text-color);
-}
-.contact:hover, .contact:focus {
-  color: var(--accent-color);
-}
-
-.contact-header {
-  order: -1;
-  fill: var(--primary-text-color);
-  margin-right: 10px;
-  cursor: pointer;
-  fill: currentColor;
 }
 
 .hero-main {
