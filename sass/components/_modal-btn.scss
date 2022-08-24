@@ -1,0 +1,24 @@
+.modal-btn {
+    @include font($fs: 16px, $lh: 1.9);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: inherit;
+    margin-bottom: 200px;
+
+    margin-top: 40px;
+    border-radius: 4px;
+    margin: 0 auto;
+
+    Offset: rgba(0, 0, 0, 0.15);
+
+
+    color: var(--accent-second-color);
+    background-color: var(--accent-color);
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;}
+}

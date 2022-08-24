@@ -1,0 +1,5 @@
+.subtitle {
+    @include font($fs: 36px, $lh: 1.67);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}

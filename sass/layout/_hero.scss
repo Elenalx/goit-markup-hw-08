@@ -1,0 +1,30 @@
+.hero-main {
+    background: var(--secondary-background-color);
+    max-width: 1600px;
+    border-radius: 0px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg.jpg);
+    background-size: cover;
+    background-color: #C4C4C4;
+}
+
+
+.hero-btn {
+  @extend %align;
+}
+
+.hero-title {
+  @include font($fw: 900, $fs: 44px, $lh: 1.36);
+    width: 696px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--accent-second-color);
+}

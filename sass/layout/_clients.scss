@@ -1,0 +1,39 @@
+.clients-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.list-client {
+  @extend %align;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.client-link {
+    @extend %align;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: border-color var(--transition);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        }
+}
+
+.client-list-icon {
+    fill: #AFB1B8;
+    transition: fill var(--transition);
+
+    .client-item:hover &,
+    .client-item:focus & {
+        fill: var(--accent-color);
+        }
+}
+
+
+

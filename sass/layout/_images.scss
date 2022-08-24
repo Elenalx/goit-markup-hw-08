@@ -1,0 +1,33 @@
+.second-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title-activity {
+    @include font();
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    .activity & {
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        color: var(--accent-second-color);
+        background-color: rgb(47, 48, 58, 0.8);
+        }
+}
+
+.activity {
+    display: flex;
+    gap: 30px;
+}
+
+.position {
+    position: relative;
+}
+.section-image {
+    padding-bottom: 94px;
+}
