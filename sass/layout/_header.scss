@@ -1,3 +1,38 @@
+@media screen and (max-width: 1199px) {
+    .contact {
+            display: none;
+        }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .menu{
+        display:none;
+    }
+        .contact {
+            display: none;
+        }
+}
+
+.page-header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-menu-open {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+
+
+
 // .page-header-container {
 //     display: flex;
 //     align-items: center;
