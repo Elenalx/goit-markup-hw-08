@@ -1,16 +1,63 @@
 .hero-main {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background: var(--secondary-background-color);
     max-width: 1600px;
     border-radius: 0px;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg.jpg);
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-480.jpg');
     background-size: cover;
     background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+
 }
 
+@media screen and (min-device-pixel-ratio:2) and (max-width: 768px),
+screen and (min-resolution: 192dpi) and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px) {
+
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-768@2x.jpg');
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .hero-main{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/hero-768.jpg');
+  }
+  
+}
+
+@media screen and (min-device-pixel-ratio:2) and (min-width: 767px),
+screen and (min-resolution: 192dpi) and (min-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 767px) {
+
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-480@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url('../images/hero-1600.jpg');
+  }
+
+}
+@media screen and (min-device-pixel-ratio:2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    
+  .hero-main {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-1600@2x.jpg');
+        }
+}
 
 .hero-btn {
   @extend %align;
@@ -28,3 +75,4 @@
 
     color: var(--accent-second-color);
 }
+

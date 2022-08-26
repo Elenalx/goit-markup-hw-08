@@ -63,6 +63,7 @@ button {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -72,16 +73,6 @@ button {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -351,123 +342,47 @@ button {
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 1199px) {
-  .contact {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
-  .mobile-menu-open {
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-  }
-}
-.page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.page-header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu-open {
-    display: none;
-  }
-  .page-nav {
-    display: flex;
-    align-items: center;
-  }
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  .menu__item {
-    position: relative;
-  }
-  .menu__item:not(:last-child) {
-    margin-right: 51px;
-  }
-  .menu__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color var(--transition);
-    color: var(--secondary-text-color);
-  }
-  .menu__link:hover, .menu__link:focus {
-    color: var(--accent-color);
-  }
-  .logo {
-    margin-right: 88px;
-  }
-  .header-mail {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ECECEC;
-  }
-  .page-nav {
-    top: 0;
-    left: 0;
-    margin-right: 93px;
-  }
-  .header-mail {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  .menu__item {
-    position: relative;
-  }
-  .menu__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-.logo {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-  color: var(--accent-color);
-}
-
-.logo__part {
-  color: black;
-}
-
 .hero-main {
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: var(--secondary-background-color);
   max-width: 1600px;
   border-radius: 0px;
-  margin: 0 auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg");
   background-size: cover;
   background-color: #C4C4C4;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 767px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-main {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600@2x.jpg");
+  }
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
