@@ -86,13 +86,12 @@
         }
 
     .logo {
-        margin-right: 88px;
-        }
-    .logo {
-        @include font($fs: 26px, $lh: 1.19);
+        font-size: 24px;
+        line-height: 1.17;
+        line-height: 100%;
         font-family: 'Raleway', sans-serif;
         letter-spacing: 0.03em;
-        margin-right: 88px;
+        // margin-right: 88px;
         color: var(--accent-color);
     }
     
@@ -181,9 +180,9 @@
             }
     }
 
-    .logo {
-        margin-right: 93px;
-        }  
+    // .logo {
+    //     margin-right: 93px;
+    //     }  
 }
 
 .header__container {

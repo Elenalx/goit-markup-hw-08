@@ -1,7 +1,7 @@
 .hero-main {
-    height: 400px;
+    // height: 400px;
     padding-top: 118px;
-    padding-bottom: 118px;
+    padding-bottom: 0;
     background: var(--secondary-background-color);
     max-width: 1600px;
     border-radius: 0px;
@@ -23,7 +23,7 @@ screen and (min-resolution: 192dpi) and (max-width: 768px),
 screen and (min-resolution: 2dppx) and (max-width: 768px) {
 
   .hero-main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-768@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-480@2x.jpg');
   }
 
 }
@@ -40,7 +40,7 @@ screen and (min-resolution: 192dpi) and (min-width: 767px),
 screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
   .hero-main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-480@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-768@2x.jpg');
   }
 }
 
@@ -64,8 +64,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .hero-title {
-  @include font($fw: 900, $fs: 44px, $lh: 1.36);
-    width: 696px;
+  @include font($fw: 900, $fs: 24px, $lh: 1.62);
+    // width: 696px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;

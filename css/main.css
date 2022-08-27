@@ -430,15 +430,11 @@ button {
     color: var(--accent-color);
   }
   .logo {
-    margin-right: 88px;
-  }
-  .logo {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+    line-height: 100%;
     font-family: "Raleway", sans-serif;
     letter-spacing: 0.03em;
-    margin-right: 88px;
     color: var(--accent-color);
   }
   .logo__part {
@@ -510,9 +506,6 @@ button {
   .menu__item:not(:last-child) {
     margin-right: 50px;
   }
-  .logo {
-    margin-right: 93px;
-  }
 }
 @media screen and (min-width: 480px) {
   .header__container {
@@ -526,9 +519,8 @@ button {
 }
 
 .hero-main {
-  height: 400px;
   padding-top: 118px;
-  padding-bottom: 118px;
+  padding-bottom: 0;
   background: var(--secondary-background-color);
   max-width: 1600px;
   border-radius: 0px;
@@ -543,7 +535,7 @@ button {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
   .hero-main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -553,7 +545,7 @@ button {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 767px) {
   .hero-main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -568,9 +560,8 @@ button {
 }
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  width: 696px;
+  font-size: 24px;
+  line-height: 1.62;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
