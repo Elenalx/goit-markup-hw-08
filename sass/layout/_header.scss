@@ -9,6 +9,8 @@
                letter-spacing: 0.03em;
                margin-right: 88px;
                color: var(--accent-color);
+               margin-top: 16px;
+               margin-bottom: 16px;
            }
     
            .logo__part {
@@ -34,10 +36,10 @@
         }           
  }
 
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+// .page-header {
+//     padding-top: 16px;
+//     padding-bottom: 16px;
+// }
 .page-header-container {
     display: flex;
     align-items: center;
@@ -51,9 +53,9 @@
         display: none;
     }
 
-         .page-header {
-             padding-top: 16px;
-             padding-bottom: 16px;}
+        //  .page-header {
+        //      padding-top: 16px;
+        //      padding-bottom: 16px;}
 
     .page-nav {
         display: flex;
