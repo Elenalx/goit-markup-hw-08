@@ -169,6 +169,13 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
@@ -468,6 +475,11 @@ button {
     line-height: 0;
   }
 }
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .page-header-container {
   display: flex;
   align-items: center;
@@ -536,11 +548,16 @@ button {
     color: var(--accent-color);
   }
   .contact-header {
+    width: 16px;
+    height: 12px;
     order: -1;
-    fill: var(--primary-text-color);
+    fill: currentColor;
     margin-right: 10px;
     cursor: pointer;
     fill: currentColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .current {
     display: inline-block;
@@ -573,6 +590,7 @@ button {
     display: flex;
     align-items: center;
     margin-left: auto;
+    gap: 30px;
   }
   .menu__item {
     position: relative;
@@ -592,14 +610,19 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-mail {
+    margin-left: auto;
+  }
+}
 .hero-main {
   padding-top: 118px;
-  padding-bottom: 0;
+  padding-bottom: 118px;
   background: var(--secondary-background-color);
   max-width: 1600px;
   border-radius: 0px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herom-480.jpg");
   background-size: cover;
   background-color: #C4C4C4;
   background-repeat: no-repeat;
@@ -609,7 +632,7 @@ button {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
   .hero-main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herom-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -647,17 +670,11 @@ button {
 .services {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  text-align: center;
   color: #212121;
-}
-
-.about-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .about {
@@ -666,17 +683,33 @@ button {
 }
 
 .servise-title {
-  width: 270px;
-}
-
-.our-advantage {
-  background-color: var(--stuff-background-color);
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
   margin-bottom: 30px;
 }
 
+.our-advantage {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  background-color: rgb(245, 244, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .servise-title {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
 .second-title {
   margin-bottom: 50px;
   text-align: center;
