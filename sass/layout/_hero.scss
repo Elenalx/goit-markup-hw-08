@@ -76,3 +76,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--accent-second-color);
 }
 
+@media screen and (min-width: 768px){
+  .hero-title {
+      width: 360px;
+} 
+}
+
+@media screen and (min-width: 1200px){
+  .hero-title {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+} 
+
