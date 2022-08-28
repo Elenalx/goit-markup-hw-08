@@ -97,14 +97,6 @@
          color: black;
         }
 
-    .header-mail {
-        margin-left: 96px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        
-        }
-
     .contact {
         text-decoration: none;
         font-weight: 500;
@@ -112,7 +104,7 @@
         line-height: 1.17;
         // @include font($fw: 500);
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         letter-spacing: 0.02em;
         transition: color var(--transition);
@@ -129,7 +121,7 @@
         height: 12px;
         order: -1;
         fill: currentColor;;
-        margin-right: 10px;
+        margin-right: 8px;
         cursor: pointer;
         fill: currentColor;
         transition-property: color;
@@ -157,10 +149,19 @@
         
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .header-mail {
+            margin-left: 96px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+        }
+}
 @media screen and (min-width: 1200px){
     .page-header {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         border-bottom: 1px solid #ECECEC
     }
 
@@ -171,9 +172,10 @@
     }
 
     .header-mail {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
+        // display: flex;
+        
+        // align-items: center;
+        // margin-left: auto;
         gap: 30px;
 
     }
@@ -207,4 +209,35 @@
         }
     }   
     
-    
+        @media screen and (min-width: 1200px) {
+            .header-mail {
+                    display: flex;
+                }
+        }
+.footer_adress-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 60px;
+}
+
+.footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px){
+    .footer {
+            display: flex;
+     } 
+}
+.footer__modal__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+}
+       
