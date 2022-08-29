@@ -24,7 +24,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.footer__form__sumbit, .portfolio__section__nav, .media__list, .media__list__link, .client-link, .list-client, .social-list-link, .our-advantage, .hero-btn, .modal-close-btn {
+.footer__form__sumbit, .media__list, .media__list__link, .client-link, .list-client, .social-list-link, .our-advantage, .hero-btn, .modal-close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,11 +262,11 @@ button {
 
 .modal {
   position: absolute;
+  width: 300px;
+  min-height: 580px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
   background-color: var(--primary-background-color);
   padding: 40px;
 }
@@ -323,16 +323,20 @@ button {
 
 .modal-form-field {
   margin-bottom: 10px;
+  margin-top: 12px;
   border: 1px;
 }
 
 .form-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   margin-bottom: 12px;
   text-align: center;
   height: 23px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-head-text);
 }
 
 .modal-form-input-icon {
@@ -432,6 +436,16 @@ button {
   color: var(--accent-second-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -1171,7 +1185,11 @@ button {
 }
 
 .portfolio__section__nav {
-  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 8px;
+  row-gap: 15px;
 }
 
 .projects__title_name {
@@ -1218,8 +1236,7 @@ button {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
 }
 
 .card__link__img {
@@ -1252,6 +1269,9 @@ button {
 
 .card__link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__link:hover, .card__link:focus {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1299,4 +1319,19 @@ button {
 .footer__modal__icon {
   display: flex;
   justify-content: center;
+}
+
+.card {
+  border-top: rgb(217, 217, 217);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__section__nav {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

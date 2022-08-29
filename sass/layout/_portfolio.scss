@@ -24,9 +24,17 @@
 }
 
 .portfolio__section__nav {
-    @extend %align;
-    margin-bottom: 50px;
-}
+    // @extend %align;
+    // margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        gap: 8px;
+        row-gap: 15px;
+        }
+
+
+
 
 .projects__title_name {
     line-height: 1.9;
@@ -71,8 +79,9 @@
 }
 
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 }
 
 .card__link__img {
@@ -107,6 +116,10 @@
 
 .card__link {
     display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:hover,
     &:focus {
@@ -166,3 +179,16 @@
 // .footer__modal__form {
 //     margin-left: 93px;
 // }
+.card{
+        border-top: rgb(217 217 217);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-style: normal;
+        }
+@media screen and (min-width: 768px){
+    .portfolio__section__nav {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+} 
