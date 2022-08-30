@@ -1,7 +1,5 @@
 .footer {
     background: var(--secondary-background-color);
-    // padding-top: 60px;
-    // padding-bottom: 60px;
     padding: 60px 0;
 }
 
@@ -9,7 +7,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 60px;
         }
 
 .footer__logo {
@@ -34,7 +31,6 @@
 
 .footer__address {
     font-style: normal;
-    // margin-top: 20px;
 }
 
 .footer__logo--part {
@@ -85,15 +81,6 @@
     transition: fill var(--transition);
 }
 
-// .footer__address {
-//     display: flex;
-//     align-items: baseline;
-// }
-
-// .footer {
-//     margin-left: 70px;
-// }
-
 .media__list {
     @extend %align;
     flex-wrap: wrap;
@@ -105,13 +92,12 @@
     .footer__title {
         text-align: center;
         }
+    .footer-bottom {
+        width: auto;
+         }
 }
-.footer-center{
-    width: 100%;
-}
-.footer-bottom{
-    width: auto;
-}
+
+
 .footer__modal__form{
     display: flex;
     flex-direction: column;
@@ -153,48 +139,74 @@
 
 }
  .footer {
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-    //  margin-bottom: 60px;
- }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
 
  .footer_adress-link {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+ 
+  @media screen and (max-width: 767px){
+    .footer_adress-link {
+            margin-bottom: 60px;
+        }
+        .footer-center {
+            width: 100%;
+        }
+
+    }
+  .footer_adress-link {
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+
+.footer_adress-nav {
             margin-bottom: 60px;
         }
 
- @media screen and (min-width: 768px){
+ @media screen and (min-width: 768px) and (max-width: 1199px){
     .footer_adress-nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            margin-bottom: 60px;
             align-items: baseline;
         }
-
  } 
 
  @media screen and (max-width: 1199px){
     .footer-center {
             display: flex;
         }
+       
  } 
 
  @media screen and (min-width: 1200px){
-    .footer__address {
+    .footer__adress {
             display: flex;
-            align-items: baseline;
         }
+
+    .footer_adress-nav {
+            display: flex;
+            margin-right: auto;
+            margin-bottom: 60px;
+                }
  } 
  @media screen and (min-width: 1200px) {
     .footer_adress-link {
            margin-right: 70px;
          margin-bottom: 0%;
         }
+     .footer__address{
+        display: flex;
+     }   
 
     .footer-center {
-         margin-right: 93px;
         margin-bottom: 0px;
         width: auto;
          }

@@ -6,6 +6,7 @@
     color: var(--secondary-text-color);
 }
 
+
 .command-list {
     background: var(--stuff-background-color);
     width: 1600px;
@@ -34,6 +35,7 @@
 }
 
 .team-main {
+    
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -80,3 +82,8 @@
             padding-top: 60px;
             padding-bottom: 30px;
         }
+.about-command_cart{
+    // display: flex;
+    margin-bottom: gap;
+    
+}

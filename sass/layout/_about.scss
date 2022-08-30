@@ -18,9 +18,9 @@
     padding-top: 94px;
 }
 
-.servise-title {
-    margin-bottom: 30px;
-}
+// .servise-title {
+//     margin-bottom: 30px;
+// }
 
 .our-advantage {
     @extend %align;
@@ -36,29 +36,44 @@
   @media screen and (min-width: 768px){
     .about-section{
         display: flex;
+        margin-bottom: gap;
         justify-content: space-between;
-        // margin-right: -30px;
-        // // gap: 30px;
+        margin-bottom: 30px;
     }
-  } 
+
+  }
+  @media screen and (max-width: 768px){
+    .servise-title:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+  }
+  
    @media screen and (min-width: 768px) and (max-width: 1199px) {
        .about-section {
-           flex-wrap: wrap;}
-       }      
+           flex-wrap: wrap;
+       }  
+    }       
     
 
   @media screen and (min-width: 768px){
     .servise-title {
             width: calc((100% - 60px) / 2);
-            margin-right: 30px;
+            // margin-right: 30px;
         }
+    .servise-title:nth-child(2n+1){
+        margin-right: 30px;
+    } 
   } 
 
   @media screen and (min-width: 1200px){
     .servise-title {
             width: calc((100% - 90px) / 4);
-            margin-right: 30px;
+            // margin-right: 30px;
             margin-bottom: 0px;
-        }
-  }
+         }
+    .servise-title:not(:last-child) {
+         margin-right: 30px;
+         }
+     }
    
