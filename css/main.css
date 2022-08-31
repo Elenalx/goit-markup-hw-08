@@ -644,8 +644,8 @@ button {
 }
 
 .hero-main {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: var(--secondary-background-color);
   max-width: 1600px;
   border-radius: 0px;
@@ -718,8 +718,7 @@ button {
 }
 
 .about {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 60px 0;
 }
 
 .our-advantage {
@@ -733,12 +732,16 @@ button {
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 94px 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-section {
     display: flex;
     margin-bottom: gap;
     justify-content: space-between;
-    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -827,6 +830,11 @@ button {
     padding: 94px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .padding-image {
+    padding-top: 94px 0;
+  }
+}
 .command-list-foto {
   font-weight: 500;
   font-size: 16px;
@@ -847,7 +855,6 @@ button {
 .command {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 .about-list-foto {
@@ -860,8 +867,9 @@ button {
 
 .team {
   background-color: var(--stuff-background-color);
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   margin-bottom: 0;
+  padding-top: 60px;
 }
 
 .team-main {
@@ -903,14 +911,19 @@ button {
   letter-spacing: 0.03em;
   color: rgb(33, 33, 33);
   margin-bottom: 30px;
-  padding-top: 60px;
-  padding-bottom: 30px;
 }
 
-.about-command_cart {
-  margin-bottom: gap;
+.about-command {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-command_cart:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .clients-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -1139,21 +1152,19 @@ button {
   justify-content: center;
 }
 
-.footer_adress-nav {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer_adress-nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
     align-items: baseline;
   }
 }
 @media screen and (max-width: 1199px) {
   .footer-center {
     display: flex;
+  }
+  .footer_adress-nav {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1163,7 +1174,6 @@ button {
   .footer_adress-nav {
     display: flex;
     margin-right: auto;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {

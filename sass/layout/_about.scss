@@ -14,8 +14,7 @@
 // }
 
 .about {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding: 60px 0;
 }
 
 // .servise-title {
@@ -33,12 +32,24 @@
     align-items: center;
     justify-content: center;
 }
+
+  // @media screen and (max-width: 1199px){
+  //   .about{
+  //       padding-bottom: 94px;
+  //   }
+  // }
+
+    @media screen and (min-width: 1200px) {
+      .about {
+        padding: 94px 0;
+          }
+        }
   @media screen and (min-width: 768px){
     .about-section{
         display: flex;
         margin-bottom: gap;
         justify-content: space-between;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
   }
